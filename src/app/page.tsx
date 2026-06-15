@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { axiosInstance } from '@/lib/api/axios';
 import Link from 'next/link';
@@ -57,13 +58,13 @@ export default function HomePage() {
       </h1>
       <Link
         href='/auth/register'
-        className='bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg font-medium transition'
+        className='bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-lg font-medium transition'
       >
         Register
       </Link>
       <Link
         href='/auth/login'
-        className='bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-lg font-medium transition'
+        className='bg-amber-500 hover:bg-amber-600 text-white px-6 py-4 rounded-lg font-medium transition'
       >
         Login
       </Link>
